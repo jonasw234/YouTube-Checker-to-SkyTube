@@ -1,9 +1,9 @@
-# YouTube-Checker-to-SkyTube
+# YouTube Checker to SkyTube
 Replaces subscriptions from [SkyTube](https://skytube-app.com/) with those exported by [YouTube Checker](https://github.com/XrXr/YoutubeSubscriptionChecker)
 
 Basically I don’t really care to use an account for watching YouTube, so I use [YouTube Checker](https://github.com/XrXr/YoutubeSubscriptionChecker) as a Firefox addon on my desktop and [SkyTube](https://skytube-app.com/) on my Android.  To synchronize my “subscriptions” between them, I created this little script.
 
-*Warning:* This is a one way synchronization from YouTube Checker to SkyTube.  The current version doesn’t try to merge subscriptions and you cannot synchronize from SkyTube to YouTube Checker.  Maybe I will add this in the future, but right now this is simply not my use case.
+*Warning:* This is a one way synchronization from [YouTube Checker](https://github.com/XrXr/YoutubeSubscriptionChecker) to [SkyTube](https://skytube-app.com/).  The current version doesn’t try to merge subscriptions and you cannot synchronize from [SkyTube](https://skytube-app.com/) to [YouTube Checker](https://github.com/XrXr/YoutubeSubscriptionChecker).  Maybe I will add this in the future, but right now this is simply not my use case.
 
 ## Dependencies
 - jq

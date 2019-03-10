@@ -5,6 +5,10 @@ Basically I don’t really care to use an account for watching YouTube, so I use
 
 *Warning:* This is a one way synchronization from YouTube Checker to SkyTube.  The current version doesn’t try to merge subscriptions and you cannot synchronize from SkyTube to YouTube Checker.  Maybe I will add this in the future, but right now this is simply not my use case.
 
+## Dependencies
+- jq
+- sqlite3
+
 ## Usage
 `./youtube-checker-to-skytube.sh subs.json skytube.skytube`
 

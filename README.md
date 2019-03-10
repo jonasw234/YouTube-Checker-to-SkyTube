@@ -3,6 +3,8 @@ Replaces subscriptions from [SkyTube](https://skytube-app.com/) with those expor
 
 Basically I don’t really care to use an account for watching YouTube, so I use [YouTube Checker](https://github.com/XrXr/YoutubeSubscriptionChecker) as a Firefox addon on my desktop and [SkyTube](https://skytube-app.com/) on my Android.  To synchronize my “subscriptions” between them, I created this little script.
 
+*Warning:* This is a one way synchronization from YouTube Checker to SkyTube.  The current version doesn’t try to merge subscriptions and you cannot synchronize from SkyTube to YouTube Checker.  Maybe I will add this in the future, but right now this is simply not my use case.
+
 ## Usage
 `./youtube-checker-to-skytube.sh subs.json skytube.skytube`
 

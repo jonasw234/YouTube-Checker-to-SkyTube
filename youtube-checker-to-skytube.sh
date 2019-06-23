@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-subs="$1"
-skytube="$2"
+subs=$(readlink -f "$1")
+skytube=$(readlink -f "$2")
 
-if [[ ! -f $subs || ! -f $skytube ]]
+if [[ ! -f "$subs" || ! -f "$skytube" ]]
 then
     echo 'Usage: youtube-checker-to-skytube subs.json skytube.skytube'
     echo 'All the subscriptions in the database file will be replaced with subscriptions from the YouTube Checker.'
@@ -26,13 +26,13 @@ fi
 
 tmpdir=$(mktemp -d)
 pushd "$tmpdir"
-jq ".channels | .[].id" < $1 > channel-ids.txt
+jq ".channels | .[].id" < "$subs" > channel-ids.txt
 sed -i 's/"//g' channel-ids.txt
 awk '{print NR","$0",1552177649746"}' channel-ids.txt > channel-ids.csv
-cp $2 skytube.zip
+cp "$skytube" skytube.zip
 unzip skytube.zip
 sqlite3 subs.db '.mode csv' 'delete from Subs;' '.import channel-ids.csv Subs'
 zip -qf skytube.zip subs.db
-cp skytube.zip $2
+cp skytube.zip "$skytube"
 popd
 rm -r "$tmpdir"

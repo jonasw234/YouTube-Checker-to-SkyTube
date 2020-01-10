@@ -30,3 +30,6 @@ After running this script, reimport the modified database to replace your subscr
 1. Go to settings  
 2. Click on Import/Export  
 3. Select Import database and select the updated database.
+
+## Alternatives
+If you prefer to use [NewPipe](https://newpipe.schabi.org/), I’ve also created a script for that: [YouTube-Checker-to-NewPipe](https://github.com/jonasw234/YouTube-Checker-to-NewPipe)

@@ -24,7 +24,8 @@ After running this script, reimport the modified database to replace your subscr
 ### Steps to export SkyTube subscriptions
 1. Go to settings  
 2. Click on Import/Export  
-3. Select Export database (e.g. skytube.skytube).
+3. Select Export database (e.g. skytube.skytube).  
+(You only need to export the database once.  Since the script doesn’t keep the data in it anyways, if you keep this file, you can just reuse it in the future and don’t need to repeat this step.)
 
 ### Steps to reimport SkyTube subscriptions
 1. Go to settings  
